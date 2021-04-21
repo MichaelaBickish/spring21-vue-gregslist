@@ -3,7 +3,12 @@
     <div class="row">
       <div class="col py-3">
         <h2>Houses</h2>
-        <button class="btn btn-outline-success">
+        <button title="Open Create House Form"
+                type="button"
+                class="btn btn-outline-success"
+                data-toggle="modal"
+                data-target="#new-house-form"
+        >
           <i class="fas fa-plus" aria-hidden="true"></i>
         </button>
       </div>
@@ -28,7 +33,7 @@
         houses: computed(() => AppState.houses)
       })
 
-      onMounted(async () => {
+      onMounted(async() => {
         try {
           await housesService.getHouses()
         } catch (error) {

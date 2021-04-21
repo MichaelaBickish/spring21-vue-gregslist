@@ -1,13 +1,12 @@
 <template>
   <div class="house col-md-4 mb-3">
     <div class="card shadow">
-      <img src="//placehold.it/100x100" alt="" class="card-img-top">
+      <img class="card-img-top" :src="house.imgUrl" alt="">
       <div class="card-body">
         <h3 class="card-title">
-          {{ house.bedrooms }} beds
+          ${{ house.price }}
         </h3>
-        <h4>{{ house.bathrooms }} baths</h4>
-        <h5>${{ house.price }}</h5>
+        <p>{{ house.bedrooms }} beds | {{ house.bathrooms }} baths</p>
       </div>
     </div>
   </div>

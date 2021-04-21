@@ -6,22 +6,25 @@
   <main>
     <router-view />
     <CreateCarModal />
+    <CreateHouseModal />
   </main>
   <footer>
     <div class="bg-dark text-light text-center p-4">
-      Made with 💖 by CodeWorks
+      Made with 💖 by MickBick
     </div>
   </footer>
 </template>
 
 <script>
 import CreateCarModal from './components/CreateCarModal.vue'
+import CreateHouseModal from './components/CreateHouseModal.vue'
 import Navbar from './components/Navbar'
 
 export default {
   components: {
     Navbar,
-    CreateCarModal
+    CreateCarModal,
+    CreateHouseModal
   }
 }
 </script>
