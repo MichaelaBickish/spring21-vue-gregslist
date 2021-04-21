@@ -2,17 +2,16 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
       <div class="d-flex flex-column align-items-center">
-        <h2>Gregslist!</h2>
+        <h1>Gregslist!</h1>
       </div>
     </router-link>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarText"
-      aria-controls="navbarText"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon" />
     </button>
@@ -39,13 +38,13 @@
 </template>
 
 <script>
-export default {
-  name: 'Navbar',
-  setup() {
-    return {}
-  },
-  components: {}
-}
+  export default {
+    name: 'Navbar',
+    setup() {
+      return {}
+    },
+    components: {}
+  }
 </script>
 
 <style lang="scss" scoped>
