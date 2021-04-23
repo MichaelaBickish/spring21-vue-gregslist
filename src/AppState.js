@@ -3,6 +3,7 @@ import { reactive } from 'vue'
 export const AppState = reactive({
   cars: [],
   activeCar: null,
-  houses: []
+  houses: [],
+  jobs: []
   // activeHouse: null
 })
